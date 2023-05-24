@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(my.gif) ;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        
+        }
+       #button{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color: rgb(12, 3, 176);
+            text-shadow: 0px 2px 3px red,3px 3px 10px black;
+            font-size: 50px;
+            padding-top: 30px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1 >MY CALCULATOR </h1>
+  
+    <div class="calculator"  style="text-align: center; padding-top: 145px;  ">
+        <input type="text" id="result" readonly style="height: 40px; width: 229px; background-color: rgb(244, 248, 248); border: 2px solid black;">
+        <center>
+        <table style="background-color: rgb(5, 5, 25); padding:10px 10px 10px 10px;">
+            <tr style="padding: 10px;">
+                <td><button onclick="appendNumber(7)" style="width: 50px; height: 50px;">7</button></td>
+                <td><button onclick="appendNumber(8)" style="width: 50px; height: 50px;">8</button></td>
+                <td><button onclick="appendNumber(9)" style="width: 50px; height: 50px;">9</button></td>
+                <td><button onclick="setoperator('+')" style="width: 50px; height: 50px;">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="appendNumber(4)" style="width: 50px; height: 50px;">4</button></td>
+                <td><button onclick="appendNumber(5)" style="width: 50px; height: 50px;">5</button></td>
+                <td><button onclick="appendNumber(6)" style="width: 50px; height: 50px;">6</button></td>
+                <td><button onclick="setoperator('-')" style="width: 50px; height: 50px;">-</button></td>
+            </tr>
+
+
+            <tr>
+                <td><button onclick="appendNumber(1)" style="width: 50px; height: 50px;">1</button></td>
+                <td><button onclick="appendNumber(2)" style="width: 50px; height: 50px;">2</button></td>
+                <td><button onclick="appendNumber(3)" style="width: 50px; height: 50px;">3</button></td>
+                <td><button onclick="setoperator('*')" style="width: 50px; height: 50px;">*</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="appendNumber(0)" style="width: 50px; height: 50px;">0</button></td>
+                <td><button onclick="clearResult()" style="width: 50px; height: 50px; background-color: rgb(243, 216, 8);">C</button></td>
+                <td><button onclick="calculate()" style="width: 50px; height: 50px; background-color: rgb(20, 154, 231);">=</button></td>
+                <td><button onclick="setoperator('/')" style="width: 50px; height: 50px;">/</button></td>
+            </tr>
+
+        </table>
+    </center>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
